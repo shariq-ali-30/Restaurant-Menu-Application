@@ -181,7 +181,7 @@ body {
 
 .hero-section .search-bar input:focus {
     outline: 2px solid var(--primary-yellow);
-    border: none;
+    border-color: transparent;
 }
 
 .hero-section .search-bar .fa-magnifying-glass {
