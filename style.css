@@ -16,6 +16,10 @@
 
     --searchBar-border: 1px solid #E5E7EB;
     --filter-btns-border: 1px solid #F3F4F6;
+
+    --scrollbar-track-bg: #F3F4F6;
+    --scrollbar-thumb-bg: #D1D5DB;
+    --scrollbar-thumb-bg-hover: #9CA3AF;
 }
 
 .dark-mode {
@@ -37,6 +41,26 @@
     --searchBar-border: 1px solid #1F2937;
     --filter-btns-border: 1px solid #1F2937;
 
+    --scrollbar-track-bg: #111827;
+    --scrollbar-thumb-bg: #374151;
+    --scrollbar-thumb-bg-hover: #4B5563;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-bg);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-bg-hover);
 }
 
 * {
@@ -55,7 +79,6 @@ body {
     background-color: var(--body-bg);
     padding: 76px 0;
 }
-
 
 .container {
     width: 90%;
@@ -136,7 +159,7 @@ body {
 }
 
 .hero-section .top-content h1 {
-    margin-top: 60px;
+    margin-top: 100px;
     font-size: 36px;
     color: var(--text-primary);
 }
